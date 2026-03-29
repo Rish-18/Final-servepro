@@ -17,12 +17,23 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
-
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <!-- Fixing Internet Explorer-->
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="js/html5shiv.js"></script>
     <![endif]-->
+    <style>
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
     <style>
         .contact-section {
             max-width: 1200px;
@@ -155,48 +166,7 @@
         <div class="preloader"></div>
         <!--End Preloader -->
 
-        <!--Start Top bar area -->
-        <!-- <section class="top-bar-area"> -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <!-- <div class="language-switcher">
-                    <div id="polyglotLanguageSwitcher">
-                        <form action="#">
-                            <select id="polyglot-language-options">
-                                <option id="en" value="en" selected>English</option>
-                                <option id="fr" value="fr">French</option>
-                                <option id="de" value="de">German</option>
-                                <option id="it" value="it">Italian</option>
-                                <option id="es" value="es">Spanish</option>
-                            </select>
-                        </form>
-                    </div>
-                </div>  -->
-                    <!-- <div class="logo">
-                            <a href="./index.html">
-                                <img src="./images/1servepro/common/servepro-newlogo.jpg" alt="Awesome Logo"
-                                    style="height: 70px;">
-                            </a>
-                        </div> -->
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <!-- <div class="top-social-links">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div> -->
-                </div>
-            </div>
-        </div>
-        </section>
-        <!--End Top bar area -->
 
         <!--Start mainmenu area-->
         <section class="mainmenu-area stricky">
@@ -223,15 +193,7 @@
                                             </a>
                                         </li>
                                         <li><a href="./index.html">Home</a></li>
-                                        <li><a href="./about.html">About Us</a>
-                                            <!-- <ul>
-                                                <li><a href="./about.html">About Dentalcare</a></li>
-                                                <li><a href="team.html">Meet Our Dentist</a></li>
-                                                <li><a href="special-offers.html">Special Offers</a></li>
-                                                <li><a href="faq.html">FAQ’s</a></li>
-                                                <li><a href="testimonials.html">Testimonials</a></li>
-                                            </ul> -->
-                                        </li>
+                                        <li><a href="./about.html">About Us</a> </li>
                                         <li class="dropdown">
                                             <a href="./services.html">Services</a>
                                             <ul> <!-- left column -->
@@ -359,13 +321,13 @@
                                         </li>
                                         <li class="dropdown"><a href="./Industries.html">Industries</a>
                                             <ul>
-                                                <li><a href="./Industries.html">Commercial Premises/ Corporate
+                                                 <li><a href="./industry-commercial-corporate-facility.html">Commercial Premises/ Corporate
                                                         Offices</a>
                                                 </li>
-                                                <li><a href="./Industries.html">Residential Area</a></li>
-                                                <li><a href="./Industries.html">Manufacturing units</a></li>
-                                                <li><a href="./Industries.html">Healthcare sector</a></li>
-                                                <li><a href="./Industries.html">Education sector</a></li>
+                                                <li><a href="./industry-residential-facility.html">Residential Area</a></li>
+                                                <li><a href="./industry-manufacturing-facility.html">Manufacturing units</a></li>
+                                                <li><a href="./industry-healthcare-facility.html">Healthcare sector</a></li>
+                                                <li><a href="./industry-education-facility.html">Education sector</a></li>
 
                                             </ul>
                                         </li>
@@ -486,43 +448,9 @@
 
         <section class="contact-section">
             <div class="row">
-                <!-- Left Column: Text + Social -->
-                <!-- <div class="col-md-4 mb-4">
-                    <div class="contact-title">Get in Touch</div>
-                    <p class="text-small">
-                        We’d love to hear from you whether you have questions, need support, or want
-                        to learn about our services — our team is here to help.
-                    </p>
-                    <div class="social-icons mt-3">
-                        <img src="./images/1servepro/contact/twt.png" alt="">
-                        <img src="./images/1servepro/contact/ind.png" alt="">
-                        <img src="./images/1servepro/contact/fb.png" alt="">
-                        <img src="./images/1servepro/contact/g+.png" alt="">
-                    </div>
-                </div> -->
 
-                <!-- Middle Column: Contact Info -->
-                <!-- <div class="col-md-4 mb-4">
-                    <div class="icon-circle"><img src="./images/1servepro/contact/call.png" alt=""></div>
-                    <div class="section-label">Our Contact Info</div>
-                    <p class="text-small">+91 93265 05094</p>
-                    <p class="text-small">+91 96 1914 9374</p>
-                    <p class="text-small">serveprofacility@gmail.com</p>
-                </div> -->
-
-                <!-- Right Column: Address -->
-                <!-- <div class="col-md-4 mb-4">
-                    <div class="icon-circle"><img src="./images/1servepro/contact/loc.png" alt=""></div>
-                    <div class="section-label">Our Address</div>
-                    <p class="text-small">
-                        B-13, Ground Floor, Plot-1/4,<br>
-                        1, Civic Shopping Center, M.M.G.S. Marg,<br>
-                        Dastoorwadi, Dadar (East), Mumbai - <br> 400014.
-                    </p>
-                </div> -->
                 <div class="map-wrapper col-md-12">
-                    <!-- <iframe src="https://www.google.com/maps/" width="100%" height="300" style="border:0;"
-                        allowfullscreen="" loading="lazy"></iframe> -->
+
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.087302678363!2d72.8443047!3d19.015874300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf15eb7ea7f9%3A0x46027527c4f2b1ed!2sServepro%20Hospitality%20%26%20Facility%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1772129757413!5m2!1sen!2sin"
                         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -531,41 +459,47 @@
                 </div>
             </div>
 
-            <!-- Map -->
-
             <br><br>
             <!-- Form -->
-            <form class="contact-form mt-5">
+            <form class="contact-form mt-5" id="contactForm">
                 <div class="form-row">
                     <div class="form-group">
                         <label>First Name</label>
-                        <input type="text" placeholder="Enter Full Name" />
+                        <input type="text" name="user_name" placeholder="Enter Full Name" required />
                     </div>
                     <div class="form-group">
                         <label>Email ID</label>
-                        <input type="email" placeholder="Enter Email ID" />
+                        <input type="email" name="user_email" placeholder="Enter Email ID" required />
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group">
                         <label>Mobile Number</label>
-                        <input type="text" placeholder="+91 | Enter Mobile Number" />
+                        <input type="text" name="user_phone" placeholder="+91 | Enter Mobile Number" required/>
                     </div>
                     <div class="form-group">
                         <label>City</label>
-                        <input type="text" placeholder="Enter City" />
+                        <input type="text" name="user_city" placeholder="Enter City" required/>
                     </div>
                 </div>
                 <div class="form-group">
                     <label>Address</label>
-                    <textarea placeholder="Type a Address"></textarea>
+                    <textarea placeholder="Type a Address" name="user_address"></textarea>
                 </div>
                 <div class="form-group">
                     <label>Message</label>
-                    <textarea placeholder="Type a Message"></textarea>
+                    <textarea placeholder="Type a Message" name="message"></textarea>
                 </div>
                 <button type="submit">Send Message</button>
             </form>
+
+            <p id="successMsg" style="display:none;color:green;font-weight:600;margin-top:10px;">
+                ✅ Message sent successfully!
+            </p>
+
+            <p id="errorMsg" style="display:none;color:red;font-weight:600;margin-top:10px;">
+                ❌ Something went wrong. Try again.
+            </p>
         </section>
 
 
@@ -816,11 +750,11 @@
                                     <span class="border"></span>
                                 </div>
                                 <ul class="quick-links">
-                                    <li><a href="#">Commercial</a></li>
-                                    <li><a href="#">Residential</a></li>
-                                    <li><a href="#">Manufacturer</a></li>
-                                    <li><a href="#">Healthcare</a></li>
-                                    <li><a href="#">Education</a></li>
+                                    <li><a href="./industry-commercial-corporate-facility.html">Commercial</a></li>
+                                        <li><a href="./industry-residential-facility.html">Residential</a></li>
+                                        <li><a href="./industry-manufacturing-facility.html">Manufacturer</a></li>
+                                        <li><a href="./industry-healthcare-facility.html">Healthcare</a></li>
+                                        <li><a href="./industry-education-facility.html">Education</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1013,9 +947,36 @@
         </section>
         <!--End footer bottom area-->
 
+
+
     </div>
     <!--Scroll to top-->
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+    <div id="loader" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+z-index:9999;
+justify-content:center;
+align-items:center;
+">
+
+        <div style="
+        width:50px;
+        height:50px;
+        border:5px solid #fff;
+        border-top:5px solid #007bff;
+        border-radius:50%;
+        animation: spin 1s linear infinite;
+    "></div>
+
+    </div>
 
     <!-- main jQuery -->
     <script src="js/jquery.js"></script>
@@ -1077,8 +1038,50 @@
     <script src="js/custom.js"></script>
 
 
+    <script>
+        (function () {
+            emailjs.init("Z1kczesoMy5v1nv08");
+        })();
 
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
 
+            let form = this;
+
+            // UI reset
+            document.getElementById("successMsg").style.display = "none";
+            document.getElementById("errorMsg").style.display = "none";
+
+            // SHOW LOADER
+            document.getElementById("loader").style.display = "flex";
+
+            // 1️⃣ Send enquiry
+            emailjs.sendForm("service_md1f51c", "template_2poffb8", form)
+                .then(function () {
+
+                    // 2️⃣ Send auto-reply
+                    return emailjs.sendForm("service_md1f51c", "template_schxd87", form);
+
+                })
+                .then(function () {
+
+                    // SUCCESS
+                    document.getElementById("loader").style.display = "none";
+                    document.getElementById("successMsg").style.display = "block";
+
+                    form.reset();
+
+                })
+                .catch(function (error) {
+
+                    console.error(error);
+
+                    document.getElementById("loader").style.display = "none";
+                    document.getElementById("errorMsg").style.display = "block";
+
+                });
+        });
+    </script>
 
 
 </body>

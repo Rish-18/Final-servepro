@@ -1400,3 +1400,23 @@
     }
 
 }
+
+/* industry */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .single-team-member-wrapper {
+        width: 33.33%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .single-team-member-wrapper {
+        width: 90%; /* full width but centered */
+    }
+
+    .custom-row {
+        justify-content: center;
+    }
+}

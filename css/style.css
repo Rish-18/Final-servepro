@@ -104,7 +104,12 @@ p {
     color: #1F3365;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     margin: 0;
@@ -345,7 +350,8 @@ select:focus {
     border-radius: 3px;
 }
 
-.post-pagination li.active a, .post-pagination li:hover a {
+.post-pagination li.active a,
+.post-pagination li:hover a {
     background: #209fd6;
     color: #fff;
     border: 1px solid #209fd6;
@@ -1388,7 +1394,8 @@ select:focus {
     right: -50px;
 }
 
-.special-services-area .owl-theme .owl-nav div .prev-btn, .next-btn {
+.special-services-area .owl-theme .owl-nav div .prev-btn,
+.next-btn {
     color: #1F3365;
     font-size: 30px;
     display: block;
@@ -1541,7 +1548,8 @@ select:focus {
     transition: color 0.3s ease;
 }
 
-.servepro .owl-nav .owl-prev, .servepro .owl-nav .owl-next {
+.servepro .owl-nav .owl-prev,
+.servepro .owl-nav .owl-next {
     background: transparent !important;
 }
 
@@ -1875,10 +1883,27 @@ select:focus {
     Team Area style
 =============================================
 ***/
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.single-team-member-wrapper {
+    width: 19%;
+    float: left;
+}
+
 .team-area {
     background: #f3fbff;
     padding-top: 80px;
     padding-bottom: 50px;
+}
+
+.team-area-single-ser .single-team-member {
+    height: 460px;
 }
 
 .single-team-member {
@@ -1892,12 +1917,16 @@ select:focus {
     position: relative;
     overflow: hidden;
     display: block;
+    text-align: center;
 }
 
 .single-team-member .img-holder img {
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
     width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .single-team-member:hover .img-holder img {
@@ -2895,11 +2924,15 @@ select:focus {
 
 }
 
-#t1, #t2, #t3 {
+#t1,
+#t2,
+#t3 {
     height: 400px;
 }
 
-#t4, #t5, #t6 {
+#t4,
+#t5,
+#t6 {
     height: auto;
     padding: 0;
 }
@@ -5029,10 +5062,12 @@ select:focus {
     Service process Area style
 =============================================
 ***/
+
+
+
 #service-single-area {
     background: #ffffff;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding: 80px 20px 50px;
     overflow: hidden;
 }
 
