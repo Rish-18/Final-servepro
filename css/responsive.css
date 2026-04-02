@@ -1154,6 +1154,7 @@
     .welcome-area .sec-title {
         padding-bottom: 5px !important;
     }
+
     .sec-title h2 {
         font-size: 20px;
         margin: 5px 0 0;
@@ -1217,7 +1218,9 @@
 
     }
 
-    #t1, #t2, #t3 {
+    #t1,
+    #t2,
+    #t3 {
         height: full;
     }
 
@@ -1413,10 +1416,19 @@
 /* Mobile */
 @media (max-width: 576px) {
     .single-team-member-wrapper {
-        width: 90%; /* full width but centered */
+        width: 90%;
+        /* full width but centered */
     }
 
     .custom-row {
         justify-content: center;
+    }
+}
+
+
+/* For screens 1385px and above */
+@media (min-width: 1385px) {
+    .breadcrumb-area {
+        height: 80vh;
     }
 }
