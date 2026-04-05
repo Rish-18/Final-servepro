@@ -671,7 +671,7 @@ select:focus {
     background: url(../images/icon/submenu-icon.png) center center no-repeat;
     background-size: 20px;
     cursor: pointer;
-    z-index: 5;
+    z-index: 201;
     display: none;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -2786,7 +2786,7 @@ select:focus {
     background-size: cover;
     /* padding: 95px 0; */
     /* min-height: 200px; */
-    height: 455px;
+    height: 500px;
     position: relative;
     z-index: 1;
 }
@@ -5630,6 +5630,9 @@ select:focus {
 /* ===============================
    LEVEL 2 – RIGHT SIDE FLYOUT
 ================================ */
+.submenu-toggle {
+    display: none; /* hidden on desktop */
+}
 
 /* parent li */
 .main-menu .navigation li ul li.has-submenu {
