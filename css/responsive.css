@@ -1324,12 +1324,6 @@
 }
 
 
-/* logo hide css in mob */
-@media (max-width: 763px) {
-    .logo-item {
-        display: none;
-    }
-}
 
 /* row reverse deleted */
 @media (max-width: 768px) {
@@ -1430,5 +1424,13 @@
 @media (min-width: 1385px) {
     .breadcrumb-area {
         height: 80vh;
+    }
+}
+
+
+/* logo hide css in mob */
+@media (max-width: 763px) {
+    .logo-item {
+        display: none !important;
     }
 }
