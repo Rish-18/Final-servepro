@@ -528,7 +528,7 @@ select:focus {
 .main-menu .logo-item {
     margin-left: 0;
     padding-left: 0;
-    padding: 0 5px  !important;
+    padding: 0 5px !important;
 }
 
 .main-menu .navigation li::before {
@@ -1410,7 +1410,10 @@ select:focus {
 
 /* ---------------------------------------- about page -------------------------------- */
 .special-services-area.about-other-service {
-    background: url('../images/1servepro/about/about-page-more-bg.png');
+    /* background: url('../images/1servepro/about/about-page-more-bg.png'); */
+    background:
+          linear-gradient(rgba(10, 35, 80, 0.75), rgba(10, 35, 80, 0.75)),
+        url('../images/1servepro/home/home new banner 1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2786,7 +2789,7 @@ select:focus {
     background-size: cover;
     /* padding: 95px 0; */
     /* min-height: 200px; */
-    height: 500px;
+    height: 640px;
     position: relative;
     z-index: 1;
 }
@@ -5075,11 +5078,11 @@ select:focus {
     padding-bottom: 32px;
 }
 
-#service-single-area .sec-title h1 {
+/* #service-single-area .sec-title h1 {
     font-size: 24px;
     line-height: 34px;
     font-weight: 500;
-}
+} */
 
 #service-single-area .service-sidebar {
     overflow: hidden;
@@ -5631,7 +5634,8 @@ select:focus {
    LEVEL 2 – RIGHT SIDE FLYOUT
 ================================ */
 .submenu-toggle {
-    display: none; /* hidden on desktop */
+    display: none;
+    /* hidden on desktop */
 }
 
 /* parent li */
@@ -5759,4 +5763,29 @@ select:focus {
     text-decoration: none;
     color: inherit;
     display: block;
+}
+
+
+.fixed-logo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.fixed-logo img {
+    width: 75px;
+    /* adjust size */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.fixed-logo img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .fixed-logo img {
+        width: 60px;
+    }
 }

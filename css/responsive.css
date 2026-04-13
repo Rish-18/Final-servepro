@@ -1436,11 +1436,11 @@
 
 
 /* For screens 1385px and above */
-@media (min-width: 1385px) {
+/* @media (min-width: 1350px) {
     .breadcrumb-area {
-        height: 80vh;
+        height: 75vh;
     }
-}
+} */
 
 
 /* logo hide css in mob */
